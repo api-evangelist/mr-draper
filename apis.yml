@@ -19,11 +19,13 @@ accessModel:
   public: false
   label: Unknown
   confidence: low
-  source: []
+  source:
+  - url: https://mrdraper.com
+    status: 302
+    note: declared website redirects to atom.com — a domain sales/parking service, so the domain has lapsed
+      rather than moved to an acquirer (probed 2026-09-03, roadmap#169)
   generated: '2026-07-22'
   method: derived
-  source:
-  - {url: 'https://mrdraper.com', status: 302, note: 'declared website redirects to atom.com — a domain sales/parking service, so the domain has lapsed rather than moved to an acquirer (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mr-draper.png
 name: Mr. Draper
 description: Mr. Draper is a company surfaced as a portfolio company of 500-global and added to the API
@@ -37,14 +39,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-20'
+modified: '2026-09-15'
 x-lifecycle-status: defunct
-x-lifecycle-note: 'As of 2026-07-20 mrdraper.com and www.mrdraper.com (HTTP 200) both
-  redirect to a domain-sale landing page (atom.com/name/MrDraper); api.mrdraper.com
-  does not resolve. No developer portal, API, or artifact surface exists. The GitHub
-  "mrdraper" account is an unrelated security researcher, not this company.'
+x-lifecycle-note: As of 2026-07-20 mrdraper.com and www.mrdraper.com (HTTP 200) both redirect to a domain-sale
+  landing page (atom.com/name/MrDraper); api.mrdraper.com does not resolve. No developer portal, API,
+  or artifact surface exists. The GitHub "mrdraper" account is an unrelated security researcher, not this
+  company.
 tags:
 - Company
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
